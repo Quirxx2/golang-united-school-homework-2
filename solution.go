@@ -9,9 +9,9 @@ import "math"
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-const SidesTriangle uint 3
-const SidesSquare uint 4
-const SidesCircle uint 0
+const SidesTriangle uint = 3
+const SidesSquare uint = 4
+const SidesCircle uint = 0
 
 func CalcSquare(sideLen float64, sidesNum uint) float64 {
 	if sidesNum == 3 {
@@ -23,5 +23,5 @@ func CalcSquare(sideLen float64, sidesNum uint) float64 {
 	if sidesNum == 0 {
 		return math.Pi * math.Pow(sideLen, 2)
 	}
-	return nil
+	return 0.0
 }
